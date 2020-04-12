@@ -1,0 +1,12 @@
+Exercise 1.4.
+Observe that our model of evaluation allows for
+combinations whose operators are compound expressions.
+Use this observation to describe the behavior of the following procedure:
+
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
+
+
+For the expression (_ a b) the operator is defined by the sign of b operand.
+If it's positive then it's the regular sum.
+If it's negative then a minus -b, which equals to the sum of the expression.
