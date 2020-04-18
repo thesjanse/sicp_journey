@@ -61,3 +61,7 @@
 (check-= (cubic-root 27) 3.0 0.001)
 (check-= (cubic-root 8) 2.0 0.001)
 (check-= (cubic-root 1) 1.0 0.001)
+(check-= (cubic-root 0.008) 0.2 0.001)
+(check-= (cubic-root 8000000) 200.0 0.001)
+(check-= (cubic-root -27) -3.0 0.001)
+(check-= (cubic-root 0) 0.0 0.001)
